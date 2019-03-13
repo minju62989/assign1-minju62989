@@ -26,7 +26,7 @@ void setup() {
   fill(255,255,0);//set sun
   strokeWeight(5);
   stroke(253,184,19);
-  circle(590,50,120);
+  ellipse(590,50,120,120);
   
   soil = loadImage("img/soil.png");//set soil
   image(soil,0,160);
