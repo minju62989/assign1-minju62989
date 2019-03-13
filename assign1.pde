@@ -1,4 +1,4 @@
-PImage bg;
+PImage bg;//set bg groundhog life robt soil soldier
 PImage groundhog;
 PImage life;
 PImage robot;
@@ -10,11 +10,6 @@ float soldierY;
 
 float robotX;//set robot's position
 float robotY;
-
-int x;
-int y;
-int a;
-int b;
 
 void setup() {
 	size(640, 480, P2D);
@@ -77,11 +72,11 @@ void draw() {
   image(life,80,10);
   image(life,150,10);
   
-  image(soldier,soldierX,soldierY);//soldier run
+  image(soldier,soldierX,soldierY);//soldier runs
   soldierX+=10;
   soldierX%=640;
   
-  image(robot,robotX,robotY);
+  image(robot,robotX,robotY);//robot appears
   
   // Enter Your Code Here
 }
