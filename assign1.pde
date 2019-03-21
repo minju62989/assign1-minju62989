@@ -37,12 +37,12 @@ void setup() {
   image(life,150,10);
 
   soldier = loadImage("img/soldier.png");//set soldier
-  soldierX = 0;
-  soldierY = random(160,360);
+  soldierX = -80;
+  soldierY = 80*floor(random(2,6));
   
   robot = loadImage("img/robot.png");//set robot
-  robotX = random(160,560);
-  robotY = random(160,360);
+  robotX = 80*floor(random(2,8));
+  robotY = 80*floor(random(2,6));
   
   
 // Enter Your Setup Code Here
@@ -59,9 +59,9 @@ void draw() {
   groundhog = loadImage("img/groundhog.png");//set groundhog
   image(groundhog,280,80);
   
-  fill(255,255,0);//set sun
+  fill(253,184,19);//set sun
   strokeWeight(5);
-  stroke(253,184,19);
+  stroke(255,255,0);
   ellipse(590,50,120,120);
   
   soil = loadImage("img/soil.png");//set soil
@@ -73,7 +73,7 @@ void draw() {
   image(life,150,10);
   
   image(soldier,soldierX,soldierY);//soldier runs
-  soldierX+=10;
+  soldierX+=1;
   soldierX%=640;
   
   image(robot,robotX,robotY);//robot appears
