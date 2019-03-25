@@ -37,7 +37,7 @@ void setup() {
   image(life,150,10);
 
   soldier = loadImage("img/soldier.png");//set soldier
-  soldierX = -80;
+  soldierX = 0;
   soldierY = 80*floor(random(2,6));
   
   robot = loadImage("img/robot.png");//set robot
@@ -74,7 +74,7 @@ void draw() {
   
   image(soldier,soldierX,soldierY);//soldier runs
   soldierX+=1;
-  soldierX%=640;
+  soldierX=(soldierX%720)-80;
   
   image(robot,robotX,robotY);//robot appears
   
