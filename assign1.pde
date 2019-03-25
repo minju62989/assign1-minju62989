@@ -72,9 +72,8 @@ void draw() {
   image(life,80,10);
   image(life,150,10);
   
-  image(soldier,soldierX,soldierY);//soldier runs
-  soldierX+=1;
-  soldierX=(soldierX%720)-80;
+  image(soldier,soldierX-80,soldierY);//soldier runs
+  soldierX=(soldierX+1)%720;
   
   image(robot,robotX,robotY);//robot appears
   
